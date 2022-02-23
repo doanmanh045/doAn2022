@@ -1,0 +1,347 @@
+
+
+table {
+    width: 100%;        
+    border-collapse: collapse;
+    background-color: var(--silver);
+}
+th, td {
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid var(--golden);
+    border-radius: 1em;
+    color: var(--white);
+}
+th {
+    height: 40px;
+    text-align: center;
+}
+
+
+
+.menu{
+    &__item{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+        margin-bottom: 31px;
+        &--input{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            height: 30px;
+            
+            margin-left: 8px;
+            input{
+                width: 300px;
+                
+            }
+            textarea{
+                width: 300px;
+                height: 100px;
+            }
+            select{
+                width: 300px;
+            }
+            .ipt{
+                width: 400px;
+            }
+
+        }
+        &--error{
+            color: red;   
+            &--Small{
+                position: absolute;
+                color: red;
+                transform: translate(-103.7px,26px);
+
+                &--AddModal{
+                    position: absolute;
+                    color: red;
+                    transform: translate(-103.7px,27px);
+                }
+
+                &--noti{
+                    position: absolute;
+                    color: red;
+                    transform: translate(-103.7px,37px);
+                }
+
+                &--noti2{
+                    position: absolute;
+                    color: red;
+                    transform: translate(-103.7px,95px);
+                }
+            }
+        }
+    }
+}
+
+.btnProfilesSubmit{
+    margin: 0px 10px 20px 0px;
+    padding: 3px 21px 3px 21px;
+    border: 1px solid #5cb377;
+    color: white;
+    background-color: #5cb377;
+    cursor: pointer;
+    padding: 11px 21px 11px 21px;
+    border-radius: 7px;
+    font-family: Roboto;
+}
+
+.btnProfilesSubmit:hover{
+    background-color: #398b53;
+}
+:root{
+    --active:#ECCB7D;
+    --sideBar: #505050;
+    --white: #fff;
+    --black: #000;
+    --black1: rgb(10, 10, 10);
+    --black2:rgb(5, 5, 5);
+    --golden: #ECCB7D;
+    --golden1: #ECCB7D;
+    --gray:#141414;
+    --silver: #505050; 
+}
+
+// .darkTheme{   
+//     --active:#ECCB7D;
+//     --sideBar: #505050;
+//     --white: #fff;
+//     --black: #000;
+//     --black1: #000;
+//     --golden: #ECCB7D;
+//     --golden1: #ECCB7D;
+//     --gray:#141414;
+//     --silver: #505050; 
+// }
+
+.lightTheme {
+    --active:rgb(29,111,89);
+    --sideBar:white;
+    --white: #000;
+    --black: #e2e2e2;
+    --black1:rgb(29,111,89);
+    --black2:rgb(26, 100, 80);
+    --golden: rgb(29,111,89);
+    --golden1: #ECCB7D;
+    --gray:#ebebeb;
+    --silver: #fff; 
+}
+
+
+.main__table{
+    height: 306.41px;
+    max-width: 100%;
+    padding:10px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--silver);
+    overflow:auto;
+}
+
+.modal-dialog{
+    max-width: fit-content !important;
+    margin: 1.75em auto;
+}
+
+.modal__main{
+    &--top{
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        .input{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            input{
+                width: 90%;
+            }
+            select{
+                width: 90%;
+            }
+        }
+    }
+    &--content{
+        .title{
+            margin-bottom: 15px;
+        }
+    }
+}
+.add{
+   margin: 10px;
+    button{
+        background-color:#5cb377;
+        cursor: pointer;
+        border: none;
+        display: block;
+        padding: 10px;
+        color: black;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.send{
+    margin: 30px;
+    button{
+        background-color: #797979;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        padding: 8px 10px;
+        border-radius: 5px;
+    }
+}
+.sub__btn{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: #333;
+    font-weight: 800;
+}
+
+
+.wrapper-paginate {
+    margin-left: 20px;
+    width: 97%;
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+ 
+    
+    margin-right: 0px;
+    ul {
+  
+      li {
+        transition: all 0.35s ease;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #eaeaea;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            transform: translateY(-3px) !important;
+          text-decoration: none;
+        }
+        // &:nth-child(1) {
+        //   display: none;
+        // }
+        // &:nth-last-child(1) {
+        //   display: none;
+        // }
+        
+      }
+      li.active {
+        background-color: gray;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .wrapp_header{
+      
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      &--item{
+          input{
+              padding: 5px;
+          }
+          select{
+              padding: 5px;
+          }
+      }
+      button{
+          cursor: pointer;
+          border: none;
+          background-color: #797979;
+          color: #fff;
+      }
+  }
+
+  .input_datetime{
+      input{
+          color: var(--white) !important;
+          width: 250px;
+          margin-left: 5px;
+      }
+  }
+
+#header{padding-bottom: 0px;}
+
+.tableDepartmentSumbit{
+    overflow: auto;
+    background-color: var(--white);
+}
+
+.tableDepartmentSumbit th, .tableDepartmentSumbit td{
+    border-bottom: 1px solid var(--black);
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+}
+
+.tableDepartmentSumbit *{
+    font-size: 12px !important;
+    color: #212529 !important;
+    background-color: unset !important;
+    text-align: center !important
+}
+
+@media only screen and (max-width:576px){
+    #right-panel {
+        font-size: 14px;
+    }   
+
+    body{background-color: var(--gray);}
+
+    .menu{
+        font-size: 14px;
+        &__item{
+            &--input{
+                input{
+                    width: 200px;
+                }
+                textarea{
+                    width: 200px;
+                }
+                select{
+                    width: 200px;
+                }
+                .ipt{
+                    width: 225px;
+                }
+    
+            }
+            
+            &--error{
+
+                &--Small{
+                    transform: translate(-28.44px,27px);
+
+                    &--AddModal{
+                        position: absolute;
+                        color: red;
+                        transform: translate(-29px,27px);
+                    } 
+                    &--noti2{
+                        transform: translate(-28.5px,95px);
+                    }
+                }
+                
+            }
+        }
+    }
+}   

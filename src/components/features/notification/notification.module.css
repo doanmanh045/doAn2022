@@ -1,0 +1,90 @@
+
+
+.ipSearch {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 0px solid var(--gray);
+    background-color: rgb(233, 233, 233);
+    height: 40px;
+    margin-right: 30px;
+}
+
+.detail
+{
+    width: 100%;
+    padding: 20px;
+}
+
+.btnSearch {
+    height: 38px;
+    display: inline-block;
+    border: 1px solid #5cb377;;
+    color: white; 
+    background-color: #5cb377;
+    padding: 3px 27px 3px 27px  ;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.wrapSearch{
+    padding: 1em;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--silver);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+
+.wrapSearch >*{
+    margin-left: 10px;
+}
+
+.btnAdd{
+    margin: 0px 10px 20px 0px;
+    padding: 3px 21px 3px 21px ;
+    border: 1px solid #5cb377;
+    color: white; 
+    background-color: #5cb377;
+    cursor: pointer; 
+    padding: 11px 21px 11px 21px  ;
+    border-radius: 7px;
+    font-family: Roboto;
+}
+
+.btnAdd:hover, .btnSearch:hover{
+    background-color: #398b53;
+}
+
+
+@media only screen and (max-width:46em){
+    .wrapSearch{
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        min-height:30% ;
+    }
+
+    .wrapSearch{
+        padding:10px;
+    }
+
+    .wrapSearch >*{
+        margin-left: 0px;
+    }
+
+    .ipSearch{
+        margin: 0px 10px 10px 10px;
+        width: 90%;
+    }
+    
+    h6{
+        transform: translate(-3px) !important;
+    }
+
+    .btnSearch{
+        transform: translate(-2px) !important;
+    }
+}  

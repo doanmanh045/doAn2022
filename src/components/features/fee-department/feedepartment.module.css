@@ -1,0 +1,102 @@
+.ipSearch {
+
+    background: var(--gray);
+    border-radius: 20px;
+    color: var(--white);
+}
+
+.detail
+{
+    width: 100%;
+    padding: 20px;
+}
+
+.btnSearch {
+    height: 38px;
+    display: inline-block;
+    border: 1px solid #5cb377;;
+    color: white; 
+    background-color: #5cb377;
+    padding: 3px 27px 3px 27px  ;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.wrapSearch {
+    margin-bottom: 20px;
+    padding: 1em;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--silver);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+
+.wrapSearch>*{
+    margin-left:20px;
+}
+
+
+.btnSend{
+    margin: 0px 0px 20px 0px;
+    
+    border: 1px solid #5cb377;
+    color: white; 
+    background-color: #5cb377;
+    cursor: pointer; 
+    padding: 11px 21px 11px 21px  ;
+    border-radius: 7px;
+    font-family: Roboto;
+}
+
+.btnSend:hover, .btnSearch:hover{
+    background-color: #398b53;
+}
+
+.btnSw{
+    margin-right: 20px;
+    padding: 3px 21px 3px 21px ;
+    border: 1px solid var(--silver);
+    color: var(--white); 
+    cursor: pointer; 
+    padding: 11px 21px 11px 21px  ;
+    border-radius: 7px;
+    font-family: Roboto;
+}
+
+@media only screen and (max-width:1440px){
+    .ipSearch{
+        width: 8em;
+    }
+}
+
+@media only screen and (max-width:1110px){
+    .wrapSearch{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        width: 100%;
+        min-height:30% ;
+    }
+
+    .ipSearch{
+        margin: 0px 10px 10px 10px;
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width:46em){
+    .btnSw{
+        margin-right: -1px;
+        border-top: 0px solid #333;
+        border-bottom: 0px solid #333;  
+        border-right: 1px solid var(--silver);
+        border-left: 1px solid var(--silver);
+        color: var(--white); 
+        cursor: pointer; 
+        padding: 11px 15px 11px 15px  ;
+        border-radius: 0px;
+    }
+}  

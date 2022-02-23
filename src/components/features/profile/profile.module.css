@@ -1,0 +1,48 @@
+.btnAdd{
+    display: inline-block;
+    background-color: #5cb377;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #5cb377;
+    cursor: pointer;
+}
+.wrapChange{
+   padding: 0 15px;
+   margin-bottom: 20px;
+}
+.wrapProfile{
+    padding: 10px;
+}
+
+
+
+strong{
+    color: var(--golden);
+}
+
+.container{
+    padding:13px 16px 13px 16px;
+    border: 1px solid var(--silver);
+    border-radius: 7px;
+    margin-top: 1em;
+    
+}
+
+.item{
+    border-bottom: 1px solid var(--golden);
+    margin-bottom: 19px;
+    color:var(--white);
+}
+
+.item>input{
+    color:var(--white);
+    padding: 0px;
+    
+}
+
+.item>div{
+    margin:3px 0px 3px 0px;
+}
+
+
