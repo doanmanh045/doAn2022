@@ -1,8 +1,8 @@
 
 //export const BASE_URL = "http://localhost:8080/api";
 //export const BASE_DOWNLOAD_URL = "http://localhost:8080/download?image=";
-export const BASE_URL = "http://45.117.81.85:80/api";
-export const BASE_DOWNLOAD_URL = "http://45.117.81.85:80/download?image=";
+export const BASE_URL = "http://45.117.81.85:8080/api";
+export const BASE_DOWNLOAD_URL = "http://45.117.81.85:8080/download?image=";
 const token = localStorage.getItem("token");
 const API = {
     authorizedJSONPost: async (path, data) => {
